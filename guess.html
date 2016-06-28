@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href="guess.css" rel="stylesheet">
+<title>Guess Who? - Guess</title>
+
+</head>
+<body>
+
+<!-- ALL JAVASCRIPT GOES HERE -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<!-- ALL HTML GOES HERE -->
+<div id="bg"  style="z-index:-1">
+    <img id="bgimg" src="images/bg-howling-abyss.jpg" alt="">
+</div>
+
+<div id="transbox">
+    <div id="guesswho"><span id="pagetitle">Guess Who Mastery?</span></div>
+    <div id="intro"><p>Time to make your guesses! Use the bar at the <span style="font-weight: bold">BOTTOM</span> to guess. Make sure to type 
+        all champion names out fully and spelled correctly. </br> (This includes the apostraphes in void names such as Kha'Zix)</br></br>
+        Search below for a new summoner and try to guess their top 3 mastery champions.</p></div>
+    <form id="summonersearchform">
+        <input id="summonersearch" type="text" placeholder="Search for a Summoner..." ></input>
+    </form>
+</div>
+<div id="infobar">
+    <span id="guesstext">Number of Guesses: <span id="numguess">0</span></span>
+    <span style="padding-right: 75px"></span>
+    <span id="sumname">Summoner Name</span>
+    <span style="padding-right: 90px"></span>
+    <span id="timertext">Time: <span id="min">00</span>:<span id="sec">00</span></span>
+    <button id="giveup" type="button">Give Up</button>
+</div>
+
+<div id="champimgs">
+    <img class="loadingart" id="champone" style="opacity: .8" src="images/questionmark.jpg">
+    <img class="loadingart" id="champtwo" style="opacity: .8" src="images/questionmark.jpg">
+    <img class="loadingart" id="champthree" style="opacity: .8" src="images/questionmark.jpg">
+</div>
+
+<div id="guesstransbar">
+    <form id="champguessform">
+        <input id="champguess" type="text" placeholder="Guess a Champion..." ></input>
+    </form>
+</div>
+
+<script src="guess.js" type="text/javascript"></script>
+</body>
+</html>
